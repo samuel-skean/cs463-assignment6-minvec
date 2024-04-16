@@ -10,10 +10,6 @@ int arraymin(int* array, int size) {
 	return min;
 }
 
-int arraymin64(int* array) {
-	return arraymin(array,64);
-}
-
 int minindex(int* array, int size) {
 	int min=array[0];
 	int index=0;
