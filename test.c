@@ -12,19 +12,19 @@ int main(int argc, char** argv) {
 #ifdef ARRAY256
 	array[50]=10;
 	if(arraymin256(array)!=10) {
-		fprintf(stderr,"FAIL: Arraymin64 expected 10\n");
+		fprintf(stderr,"FAIL: Arraymin256 expected 10\n");
 		exit(1);
 	}
 
 	array[38]=9;
 	if(arraymin256(array)!=9) {
-		fprintf(stderr,"FAIL: Arraymin64 expected 9\n");
+		fprintf(stderr,"FAIL: Arraymin256 expected 9\n");
 		exit(1);
 	}
 
 	array[17]=-1;
 	if(arraymin256(array)!=-1) {
-		fprintf(stderr,"FAIL: Arraymin64 expected -1\n");
+		fprintf(stderr,"FAIL: Arraymin256 expected -1\n");
 		exit(1);
 	}
 #else
